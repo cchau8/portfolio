@@ -1,0 +1,235 @@
+.project-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 10rem;
+	margin-bottom: 5rem;
+}
+.project-thumbnail {
+	width: 60%;
+	/* height: 400; */
+	object-fit: cover;
+	opacity: 0.4;
+	transition: 0.2s ease-in-out;
+}
+
+.project-thumbnail:hover {
+	opacity: 0.8;
+	transition: 0.2s ease-in-out;
+}
+.project-desc {
+	/* border: 1px solid white; */
+	width: 60%;
+	position: absolute;
+	right: 0;
+	top: 15%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 1.5rem;
+	pointer-events: none;
+	text-align: end;
+	color: #929292;
+}
+.featured {
+	font-family: "Roboto Mono";
+	color: #1ce3f5;
+}
+.project-desc h3 {
+	font-size: 2.5rem;
+	font-weight: 500;
+	color: #fefefe;
+}
+.project-desc p {
+	padding: 2rem;
+	background-color: #0b2452;
+	border-radius: 0.8rem;
+	line-height: 2rem;
+	color: #acacac;
+	/* box-shadow: 0 0 1px 5px #0f295a; */
+	word-spacing: 0.3rem;
+	font-size: 1.8rem;
+}
+.project-desc ul {
+	display: flex;
+	gap: 1rem;
+	font-family: "Roboto Mono";
+	flex-wrap: wrap;
+	word-spacing: -6px;
+}
+
+.project-desc span:not(.featured) {
+	font-size: 1.4rem;
+	font-family: "Roboto Mono";
+	width: 50%;
+}
+.project-elem {
+	position: relative;
+	width: 100%;
+	display: flex;
+	height: fit-content;
+}
+.reverse {
+	display: flex;
+	flex-direction: row-reverse;
+}
+.reverse > a {
+	display: block;
+	width: 60%;
+}
+.reverse .project-thumbnail {
+	width: 100%;
+}
+.reverse .project-desc {
+	left: 0;
+	align-items: flex-start;
+}
+.reverse p {
+	text-align: start;
+}
+.project-links {
+	font-size: 2rem;
+	color: #929292;
+	pointer-events: all;
+	transition: 0.2s ease-in-out;
+	display: flex;
+	gap: 1.25rem;
+}
+.project-links a:hover {
+	color: #fff;
+	transition: 0.2s ease-in-out;
+}
+
+.project-page {
+	color: #fff;
+	padding: 50px 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10rem;
+}
+.project-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: space-between;
+	position: relative;
+}
+.tile-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	font-size: 3rem;
+	color: #1cf5c6a8;
+}
+.tile-header > div {
+	display: flex;
+	gap: 1rem;
+	font-size: 2.2rem;
+	color: #929292;
+}
+.tile-header a {
+	transition: 0.2 ease-in-out;
+}
+.tile-header a:hover {
+	color: #dbdbdb;
+	transition: 0.2 ease-in-out;
+}
+.tile-main {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding: 2rem 0;
+}
+.tile-main h3 {
+	font-weight: 500;
+	font-size: 2rem;
+	transition: 0.2s ease-in-out;
+}
+.tile-main p {
+	color: #acacac;
+	line-height: 2.2rem;
+	min-height: 12rem;
+}
+.project-tile {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 2rem;
+	font-size: 1.8rem;
+	border-radius: 6px;
+	background-color: #122c5da9;
+	transition: 0.2s ease-in-out;
+}
+.project-tile ul {
+	display: flex;
+	color: #929292;
+	gap: 1.5rem;
+	font-family: "Roboto Mono";
+	font-size: 1.6rem;
+	word-spacing: -6px;
+}
+.project-tile:hover {
+	transform: translateY(-10px);
+	transition: 0.2s ease-in-out;
+}
+.project-tile:hover h3 {
+	color: #47fdd6;
+	transition: 0.2s ease-in-out;
+}
+@media (max-width: 1280px) {
+	.project-tile {
+		flex: 0 1 calc(50% - 15px);
+	}
+}
+@media (max-width: 960px) {
+	.project-page {
+		padding: 2rem;
+	}
+	.project-elem {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.project-thumbnail {
+		width: 100%;
+		height: 40vh;
+	}
+	.reverse a {
+		width: 100%;
+	}
+	.project-thumbnail:hover {
+		opacity: 0.2;
+		transition: none;
+	}
+	.project-desc {
+		width: 100%;
+		height: 100%;
+		align-items: flex-start;
+		justify-content: space-around;
+		padding: 2rem;
+		top: 0;
+		color: #dbdbdb;
+		background-color: #0a1427b9;
+	}
+	.project-desc p {
+		text-align: start;
+		background-color: initial;
+		padding: 0;
+		color: inherit;
+	}
+	.project-container {
+		padding: 0 5rem;
+	}
+	.project-tile {
+		flex: 0 1 calc(50% - 15px);
+	}
+}
+@media (max-width: 767px) {
+	.project-container {
+		padding: 0 2rem;
+	}
+	.project-tile {
+		flex: 1 1 100%;
+	}
+}

@@ -1,0 +1,44 @@
+.contact-bar {
+	position: fixed;
+	right: 2vw;
+	top: 40vh;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	color: #929292;
+	font-size: 3rem;
+}
+.contact-bar a {
+	transition: 0.2s ease-in-out;
+}
+.contact-links {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.mail {
+	writing-mode: vertical-rl;
+	text-orientation: sideways;
+	font-family: "Roboto Mono";
+	font-size: 1.8rem;
+}
+.contact-bar:after {
+	content: "";
+	display: block;
+	height: 500px;
+	width: 2px;
+	background-color: #929292;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+}
+.contact-bar a:hover {
+	color: #1cf5c6;
+	transform: translateY(-5px);
+	transition: 0.2s ease-in-out;
+}
+@media (max-width: 767px) {
+	.contact-bar {
+		display: none;
+	}
+}

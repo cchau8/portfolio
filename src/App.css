@@ -1,1 +1,53 @@
 /* Other rules */
+* {
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	/* scroll-snap-type: y; */
+}
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.6rem;
+	background-color: #071631;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.container {
+	width: 100%;
+	max-width: 1280px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+main {
+	max-width: 1280px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+
+h1 {
+	font-size: 7rem;
+	font-weight: 500;
+	margin: 2rem 0;
+	width: 100%;
+	letter-spacing: 0.1rem;
+}
+h2 {
+	font-size: 4.5rem;
+	font-weight: 500;
+	margin-bottom: 4rem;
+	text-align: center;
+	color: #dbdbdbc7;
+}
+
+em {
+	color: #47fdd6;
+}

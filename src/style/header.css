@@ -1,0 +1,117 @@
+header {
+	color: #c7c7c7;
+	height: 12vh;
+	display: flex;
+	align-items: center;
+	box-shadow: -10px 10px 10px #06132c;
+}
+.navbar {
+	width: 1280px;
+	max-width: 1280px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.navbar-links {
+	display: flex;
+	flex-direction: row;
+	gap: 5rem;
+	justify-content: space-between;
+}
+.navbar-logo {
+	font-size: 3rem;
+	font-family: "Roboto Mono";
+	color: #e66072;
+	letter-spacing: 2px;
+}
+.navbar-item {
+	cursor: pointer;
+	text-transform: lowercase;
+	font-family: "Roboto Mono";
+	font-size: 1.8rem;
+	position: relative;
+	display: flex;
+	gap: 1rem;
+}
+.navbar-link:after {
+	content: "";
+	height: 2px;
+	width: 0;
+	position: absolute;
+	bottom: -1rem;
+	left: 0;
+	display: block;
+	background-color: #c7c7c7;
+	transition: ease-in-out 0.2s;
+}
+.navbar-link:hover::after {
+	width: 100%;
+	transition: ease-in-out 0.2s;
+}
+
+.resume-link {
+	color: #1cf5c6;
+}
+.mobile-menu-btn {
+	display: none;
+}
+@media (max-width: 1280px) {
+	.navbar {
+		padding: 0 2rem;
+	}
+}
+@media (max-width: 767px) {
+	.mobile-menu-btn {
+		display: block;
+		cursor: pointer;
+		font-size: 2rem;
+		padding: 1rem;
+	}
+
+	.navbar-links {
+		/* display: block; */
+		padding: 2rem 0;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 2rem;
+		position: fixed;
+		right: -100%;
+		bottom: 0;
+		height: calc(100% - 100px);
+		width: 100%;
+		background-color: #06132c;
+		z-index: 2;
+		transition: ease 0.3s;
+		visibility: hidden;
+	}
+	.navbar-item {
+		margin: 2rem 0;
+	}
+
+	.navbar-links.visible {
+		right: 0;
+		transition: ease 0.3s;
+		visibility: visible;
+	}
+	.navbar-item .contact-bar {
+		display: inherit;
+		position: relative;
+		top: 0;
+		right: 0;
+		flex-direction: column;
+		align-items: center;
+	}
+	.navbar-item .contact-links {
+		display: flex;
+		flex-direction: row;
+		gap: 2rem;
+	}
+	.navbar-item .contact-bar:after {
+		display: none;
+	}
+	.navbar-item .mail {
+		writing-mode: initial;
+	}
+}
