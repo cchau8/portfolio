@@ -13,7 +13,7 @@ const ContactBar = () => {
 				</a>
 			</div>
 			<a href="mailto:cedricchau87@gmail.com" className="mail">
-				chau_c@etna-alternance.net
+				cedricchau87@gmail.com
 			</a>
 		</div>
 	);
