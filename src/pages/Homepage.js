@@ -52,7 +52,7 @@ const Homepage = () => {
 									</a>
 								</em>{" "}
 								that my learning really escalated. In 10 weeks, I learned so much
-								starting back from pure Javascript to creating servers in Node, make
+								starting back from pure JavaScript to creating servers in Node, make
 								full on websites from scratch using React and even{" "}
 								<em>coding a full mobile app for a small startup</em> with React
 								Native.
@@ -95,7 +95,7 @@ const Homepage = () => {
 					My inbox is open and you can have access to my resume here : resume.
 				</p>
 				<div className="mail-btn">
-					<a href="mailto:chau_c@etna-alternance.net">Say hello !</a>
+					<a href="mailto:cedricchau87@gmail.com">Say hello !</a>
 				</div>
 			</section>
 		</main>

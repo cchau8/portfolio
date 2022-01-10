@@ -12,7 +12,7 @@ const ContactBar = () => {
 					<FontAwesomeIcon icon={["fab", "github"]} />
 				</a>
 			</div>
-			<a href="mailto:chau_c@etna-alternance.net" className="mail">
+			<a href="mailto:cedricchau87@gmail.com" className="mail">
 				chau_c@etna-alternance.net
 			</a>
 		</div>
