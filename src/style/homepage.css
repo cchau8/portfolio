@@ -187,3 +187,10 @@
 		width: 100%;
 	}
 }
+.resume-link {
+	color: #1ce3f5;
+	cursor: pointer;
+}
+.resume-link:hover {
+	text-decoration: underline;
+}

@@ -43,11 +43,11 @@ const Header = () => {
 							Projets
 						</Link>
 					</li>
-					<li className="navbar-item" onClick={closeMenu}>
+					{/* <li className="navbar-item" onClick={closeMenu}>
 						<a href="/" className="navbar-link">
 							Contacts
 						</a>
-					</li>
+					</li> */}
 					<li className="navbar-item" onClick={closeMenu}>
 						<a href={resume} target="_blank" rel="noreferrer" className="navbar-link">
 							Resume

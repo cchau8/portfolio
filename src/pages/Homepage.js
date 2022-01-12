@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import ScrollArrow from "../components/ScrollArrow";
 import avatar from "../assets/img/profile-pic.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import resume from "../assets/pdf/CVCedricChau-alt.pdf";
 import "../style/homepage.css";
 import MainProjects from "../components/MainProjects";
 const Homepage = () => {
@@ -36,12 +36,11 @@ const Homepage = () => {
 								Hello! My name is Cedric, and I enjoy{" "}
 								<em>creating things and solving problems</em>. My interest for the
 								web started in early 2021 when I decided to teach myself the
-								foundations of web development.
+								fundamentals of web development.
 							</p>
 							<p>
-								Using Codecademy and every resource I could find, I managed to get a
-								foot in. But it's only after dropping my Masters Degree and getting
-								into the bootcamp{" "}
+								Using Codecademy and every resources I could find, I managed to get
+								a foot in. But it's only after getting into the bootcamp{" "}
 								<em>
 									<a
 										href="https://www.lereacteur.io/"
@@ -51,15 +50,16 @@ const Homepage = () => {
 										Le Reacteur
 									</a>
 								</em>{" "}
-								that my learning really escalated. In 10 weeks, I learned so much
-								starting back from pure JavaScript to creating servers in Node, make
-								full on websites from scratch using React and even{" "}
-								<em>coding a full mobile app for a small startup</em> with React
+								that my learning really rocketed (pun intended 🚀). In 10 weeks, I
+								learned so much starting back from pure JavaScript to creating
+								servers in Node, making entire websites from scratch using React and
+								even <em>coding a mobile app for a small startup</em> with React
 								Native.
 							</p>
 							<p>
 								Now my goal is to find a Apprenticeship and graduate from{" "}
-								<em>ETNA</em> where I'm starting my Bachelor in March 2022.
+								<em>ETNA</em> where I'm starting my Bachelors Degree in Computer
+								Science in March 2022.
 							</p>
 						</div>
 						<div className="about-right">
@@ -92,7 +92,11 @@ const Homepage = () => {
 				<h2>Get In Touch</h2>
 				<p>
 					I'm currently looking for an apprenticeship opportunity as a Software Engineer.
-					My inbox is open and you can have access to my resume here : resume.
+					My inbox is open and you can have access to my resume here :{" "}
+					<a className="resume-link" href={resume} target="_blank" rel="noreferrer">
+						Resume
+					</a>
+					.
 				</p>
 				<div className="mail-btn">
 					<a href="mailto:cedricchau87@gmail.com">Say hello !</a>

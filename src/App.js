@@ -4,7 +4,7 @@ import Homepage from "./pages/Homepage";
 import Header from "./components/Header";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
-import Contact from "./pages/Contact";
+// import Contact from "./pages/Contact";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -27,7 +27,7 @@ function App() {
 				<Route path="/" element={<Homepage />} />
 				<Route path="/projects" element={<Projects />} />
 				<Route path="/resume" element={<Resume />} />
-				<Route path="/contact" element={<Contact />} />
+				{/* <Route path="/contact" element={<Contact />} /> */}
 			</Routes>
 		</Router>
 	);
